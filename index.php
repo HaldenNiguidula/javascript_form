@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    legend {
-        background-color: blue;
-        font-display: white;
+    fieldset{
+        background-color: burlywood;
+    }
+    
+    legend{
+        background-color: #fefefe;
+    }
+
+    input{
+        align
     }
 </style>
 <head>
@@ -12,7 +19,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/action_page.php">
+<form action="action_page.php" method="POST">
   <fieldset>
     <legend class id="Per">Personalia:</legend>
         <label for="fname">First name:</label>
@@ -23,7 +30,7 @@
     <input type="email" id="email" name="email"><br><br>
         <label for="birthday">Birthday:</label>
     <input type="date" id="birthday" name="birthday"><br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Save Record" name="submit_record">
   </fieldset>
 </form>
 </body>
